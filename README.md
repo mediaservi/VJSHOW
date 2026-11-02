@@ -1,20 +1,41 @@
-# VJSHOW — despliegue en Netlify
-1. Arrastra esta carpeta completa a https://app.netlify.com/drop (o súbela a Git y conecta el repo).
-2. Imágenes (PNG con transparencia para `gente/` y `objetos/`):
-   - `fondos/fondo1.jpg … fondo60`, `gente/gente1.png … gente60`, `objetos/objeto1.png … objeto60` (jpg, jpeg, png, webp, gif, avif).
-   - Alternativa: rellena `media-manifest.json` con rutas, p. ej. {"gente":["gente/ana.png"]}.
-   - Nombres con "pajaro/bird" o "pelota/ball" tienen movimiento propio.
-3. Audio: micrófono (HTTPS), archivo MP3/WAV, audio de pestaña (Chrome/Edge de escritorio) o `?audio=/audio/set.mp3`.
-4. Parámetros URL: `?preset=vinyl&bpm=128&autostart=true`.
-5. Usa solo imágenes y audio de los que tengas derechos si publicas el sitio.
+# 🪩 VJSHOW - Generador de Visualizaciones Reactivas
 
-## Almacenamiento y Loops
-- Lo que el público añade con "Mis archivos" se guarda en su navegador (IndexedDB). Nunca se sube a Netlify.
-- Las listas de Loops de YouTube también se guardan en cada navegador. Las listas del campo "loops" de `media-manifest.json` aparecen en todos con ★ (solo las gestionas tú). Sustituye el vídeo de ejemplo o borra ese bloque.
-- La cabecera CSP de `_headers` ya permite YouTube (youtube-nocookie). No quites `frame-src` ni `script-src` de YouTube o los loops no cargarán.
-- YouTube puede mostrar anuncios en vídeos monetizados de terceros y no se pueden ocultar. Usa vídeos propios o sin monetizar.
-- La lista por defecto del sitio es la playlist `[MS] VJ LOOPS` (PLKMpvvSZDRY8), definida en el código (`DEFAULT_LOOP_LIST`). Aparece con ★ en todos los navegadores. Las de `media-manifest.json` se suman a ella.
+Creada con pasión por **Mediaservi** para la comunidad de VJs, llega VJSHOW. Una herramienta simple, pero increíblemente potente, diseñada para que logres resultados espectaculares y ese "efecto wow" con total facilidad.
 
-## Contenido por defecto vs. contenido del usuario
-- El contenido por defecto lo gestionas tú: sube o cambia imágenes en `fondos/`, `gente/` y `objetos/` y vuelve a desplegar. La app las carga sola, sin mostrar nada de carpetas ni de Netlify.
-- Cada visitante puede añadir sus propias imágenes en la capa correspondiente; se guardan solo en su navegador. También puede desactivar las imágenes por defecto del sitio.
+Visualiza la música y déjate envolver por un espectáculo de capas reactivas en tiempo real. Úsala desde tu navegador, Smart TV o descárgatela en tu ordenador. Amplifica tus fiestas, eventos y que empiece el VJSHOW. Por fin visuales increíbles que se generan fácil junto con opciones de control y ajuste fino.
+
+🔗 **Pruébala en vivo ahora mismo:**
+- **[Servidor Principal (GitHub Pages)](https://mediaservi.github.io/VJSHOW/)**
+- **[Servidor Espejo (Netlify)](https://vjshow.netlify.app/)**
+
+## 🚀 Características Clave
+
+- **Audio-Reactividad en Tiempo Real:** Analiza el audio de tu micrófono o sistema y genera visuales sincronizados sin latencia perceptible.
+- **Sin Instalaciones (100% Web):** Funciona directamente en el navegador. No requiere licencias caras ni equipos dedicados.
+- **Juegos Interactivos:** Usa la consola retro incluida para jugar en tu móvil, pantalla o sala inmersiva. ¡Escoge tu cartucho favorito y amplifica la diversión!
+- **Soporte Multipantalla y Edge Blending:** Herramientas avanzadas integradas para configurar setups de proyecciones complejas.
+- **Fácil y Ajustable:** Una interfaz limpia para arrancar en segundos, pero con parámetros de ajuste fino para los más exigentes.
+- **Multiplataforma:** Úsala en tu PC/Mac, lánzala en una Smart TV o instálala como PWA.
+
+## 🛠️ Cómo Funciona
+
+VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las frecuencias de sonido en tiempo real en el lado del cliente (tu navegador). Ningún dato de audio se envía a servidores externos; todo el procesamiento es local, garantizando privacidad y máximo rendimiento.
+
+### Uso Básico:
+1. Abre la aplicación en [GitHub Pages](https://mediaservi.github.io/VJSHOW/) o [Netlify](https://vjshow.netlify.app/).
+2. Otorga permisos de micrófono o selecciona la entrada de audio de tu sistema (si usas una tarjeta de sonido virtual o mesa de mezclas).
+3. Selecciona tus efectos o carga un cartucho de juego en la consola retro.
+4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
+
+## 🤝 Contribuciones y Feedback
+
+¡El feedback es bienvenido! Si tienes ideas para mejorar la herramienta, has encontrado un bug, o quieres añadir nuevas capas de visualización, siéntete libre de abrir un *Issue* o enviar un *Pull Request* en este repositorio.
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v3 (General Public License version 3)**.
+
+Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
+
+---
+*Desarrollado con ❤️ por [mediaservi.com](https://mediaservi.com)*
