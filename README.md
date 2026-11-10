@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v8.7**
+**Versión actual: v8.8**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,11 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v8.7)
+## 🆕 Cambios de la versión actual (v8.8)
+
+- **Solo cambia MSGAME, que comparte código:** el fondo pasa a ser la foto real del videoclub, difuminada. En VJSHOW no cambia nada.
+
+Sigue de la v8.7:
 
 - **Solo cambia MSGAME, que comparte código:** fondo nuevo, una cafetería de los 50 con suelo de damero y una gramola, difuminada. En VJSHOW no cambia nada.
 
@@ -76,4 +80,4 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v8.7 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v8.8 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
