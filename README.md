@@ -8,7 +8,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)** (servidor principal)
 - **[Servidor Espejo (Netlify)](https://vjshow.netlify.app/)**
 
-**Versión actual: v7.8**
+**Versión actual: v7.9**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -31,7 +31,12 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v7.8)
+## 🆕 Cambios de la versión actual (v7.9)
+
+- **VJSHOW estrena logo:** el isotipo de la «sala inmersiva» (tres paredes en perspectiva con las barras del ritmo en la del fondo, que siguen moviéndose) en verde, y el nombre en la letra común de la familia AVHUB, con «vj» en verde. Va en la cabecera y en el icono de la app y de la pestaña.
+- MSGAME, que comparte código, estrena también el suyo (el cartucho con dos estrellas, en magenta).
+
+Sigue de la v7.8:
 
 - **Nada cambia en VJSHOW.** Esta versión presenta a Mevi, la mascota que guía al jugador, en la home en 3D de MSGAME (msgame.mediaservi.com): un videoclub dibujado como un cómic de los 80 donde se elige el juego cogiendo su caja de la estantería. VJSHOW y MSGAME comparten el mismo código, por eso las dos webs suben de versión a la vez.
 
@@ -46,4 +51,4 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v7.8 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v7.9 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
