@@ -8,7 +8,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)** (servidor principal)
 - **[Servidor Espejo (Netlify)](https://vjshow.netlify.app/)**
 
-**Versión actual: v8.2**
+**Versión actual: v8.3**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -31,7 +31,12 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v8.2)
+## 🆕 Cambios de la versión actual (v8.3)
+
+- **Teclas de las otras apps, con más aire.** Hay más separación entre ellas y con el panel de testigos de debajo, y sus logos quedan alineados entre sí por la izquierda, en el centro de cada tecla.
+- **El logo oficial, grabado en el chasis.** La placa del frontal lleva ahora el logo oficial de VJSHOW grabado a láser: sin tinta, solo el relieve hundido.
+
+Sigue de la v8.2:
 
 - **Las otras apps de AVHUB, a mano.** En la columna de pasos, debajo de «Show», aparecen en teclas algo más estrechas que los pasos, más bajas y en un gris más oscuro, con un testigo del color de cada app, los logos de SCREENS, SYSTEMS, NEWS y MSGAME, cada uno enlazado a su web. Van en tinta mate, como grabados en el frontal, y recuperan su color al pasar el cursor. Sustituyen al botón de mediaservi GAME SYSTEM: Al pulsar una tecla se enciende su testigo y, a los tres segundos, se abre esa app. MSGAME se abre desde su tecla, igual que antes. En móvil van en una línea bajo los pasos.
 
@@ -55,4 +60,4 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v8.2 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v8.3 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
