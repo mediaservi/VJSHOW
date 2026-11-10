@@ -8,7 +8,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)** (servidor principal)
 - **[Servidor Espejo (Netlify)](https://vjshow.netlify.app/)**
 
-**Versión actual: v8.0**
+**Versión actual: v8.1**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -31,9 +31,9 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v8.0)
+## 🆕 Cambios de la versión actual (v8.1)
 
-- **Las otras apps de AVHUB, a mano.** En la columna de pasos, debajo de «Show», aparecen los logos de SCREENS, SYSTEMS, NEWS y MSGAME, cada uno enlazado a su web. Van en tinta mate, como grabados en el frontal, y recuperan su color al pasar el cursor. Sustituyen al botón de mediaservi GAME SYSTEM: MSGAME se abre ahora desde su logo, igual que antes. En móvil van en una línea bajo los pasos.
+- **Las otras apps de AVHUB, a mano.** En la columna de pasos, debajo de «Show», aparecen en teclas del mismo ancho que los pasos, más bajas y en un gris más oscuro, los logos de SCREENS, SYSTEMS, NEWS y MSGAME, cada uno enlazado a su web. Van en tinta mate, como grabados en el frontal, y recuperan su color al pasar el cursor. Sustituyen al botón de mediaservi GAME SYSTEM: MSGAME se abre ahora desde su logo, igual que antes. En móvil van en una línea bajo los pasos.
 
 Sigue de la v7.9:
 
@@ -55,4 +55,4 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v8.0 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v8.1 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
