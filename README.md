@@ -8,7 +8,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)** (servidor principal)
 - **[Servidor Espejo (Netlify)](https://vjshow.netlify.app/)**
 
-**Versión actual: v8.3**
+**Versión actual: v8.4**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -31,7 +31,12 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v8.3)
+## 🆕 Cambios de la versión actual (v8.4)
+
+- **El rótulo LED, en reposo,** alterna la firma del pie con una invitación a las otras apps de AVHUB («Prueba también MSGAME: …») y su resumen. Los avisos y la ayuda de cada momento siguen teniendo prioridad.
+- **MSGAME, que comparte código, estrena escena:** un solo fondo, estanterías a sangre llenas de juegos, el mismo monitor y la misma consola antes y después de meter el cartucho, el logo oficial grabado, y una lámpara de lava, un walkman y un cubo de Rubik sobre la mesa. En VJSHOW no cambia nada más.
+
+Sigue de la v8.3:
 
 - **Teclas de las otras apps, con más aire.** Hay más separación entre ellas y con el panel de testigos de debajo, y sus logos quedan alineados entre sí por la izquierda, en el centro de cada tecla.
 - **El logo oficial, grabado en el chasis.** La placa del frontal lleva ahora el logo oficial de VJSHOW grabado a láser: sin tinta, solo el relieve hundido.
@@ -60,4 +65,4 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v8.3 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v8.4 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
