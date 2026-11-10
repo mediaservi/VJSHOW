@@ -5,8 +5,7 @@ Creada con pasión por **Mediaservi** para la comunidad de VJs, llega VJSHOW. Un
 Visualiza la música y déjate envolver por un espectáculo de capas reactivas en tiempo real. Úsala desde tu navegador, Smart TV o descárgatela en tu ordenador. Amplifica tus fiestas, eventos y que empiece el VJSHOW. Por fin visuales increíbles que se generan fácil junto con opciones de control y ajuste fino.
 
 🔗 **Pruébala en vivo ahora mismo:**
-- **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)** (servidor principal)
-- **[Servidor Espejo (Netlify)](https://vjshow.netlify.app/)**
+- **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
 **Versión actual: v8.4**
 
@@ -26,7 +25,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las frecuencias de sonido en tiempo real en el lado del cliente (tu navegador). Ningún dato de audio se envía a servidores externos; todo el procesamiento es local, garantizando privacidad y máximo rendimiento.
 
 ### Uso Básico:
-1. Abre la aplicación en [vjshow.mediaservi.com](https://vjshow.mediaservi.com) o en [Netlify](https://vjshow.netlify.app/).
+1. Abre la aplicación en [vjshow.mediaservi.com](https://vjshow.mediaservi.com).
 2. Otorga permisos de micrófono o selecciona la entrada de audio de tu sistema (si usas una tarjeta de sonido virtual o mesa de mezclas).
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
