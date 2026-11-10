@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v8.9**
+**Versión actual: v9.0**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,13 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v8.9)
+## 🆕 Cambios de la versión actual (v9.0)
+
+- **Línea de crédito común** a todas las apps de la familia, con su icono; el texto se cambia desde el panel de administración.
+- **ADPOSTER sustituye a NEWS** en el selector de la familia y en el letrero.
+- **Mando de MSGAME (código compartido):** si la wifi no deja que el móvil y la pantalla se vean (hoteles, redes de invitados), el mando pasa solo a un enlace de reserva por internet.
+
+Sigue de la v8.9:
 
 - **Solo cambia MSGAME, que comparte código:** la mano coge cada cosa con el brazo saliendo siempre del mismo hombro, y ya no choca con la lámpara. En VJSHOW no cambia nada.
 
@@ -84,4 +90,4 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v8.9 es un proyecto hecho con 𑣲 by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v9.0 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
