@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v11.0**
+**Versión actual: v11.1**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,12 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v11.0)
+## 🆕 Cambios de la versión actual (v11.1)
+
+- **PUNTERÍA · ZOMBIELAND con recursos propios (piloto)**: los emojis dejan paso a personajes dibujados y animados (dos zombis, hombre lobo, esqueleto, murciélago, rata y un pastor alemán al que no hay que disparar); disparos, recarga, gruñidos y muertes grabados, con varias tomas al azar; y banda sonora propia que entra con su introducción, enlaza con el bucle y cierra con un final (o con el tema de récord). Todo en `packs/zombieland/` (2,2 MB), con sus autores en `CREDITOS.md`. Si un archivo falta, el juego usa lo de antes.
+- **Enlace directo**: `?juego=zombieland` carga ese cartucho al abrir.
+
+### v11.0
 
 - **Logo definitivo de MSGAME**: la calavera-cartucho magenta de siempre; «MS» dibujada a mano, angulosa y en 3D, con degradado morado y filete verde; y «GAME» con cada letra calada en su ficha magenta con proporción de carátula, inclinada, con filete verde debajo y la «A» y la «E» un poco más altas. La «S» pisa ligeramente la ficha de la «G». Sustituye al anterior en cabecera, sala, monitor, consola, carátulas y móvil.
 
@@ -188,7 +193,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v11.0 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v11.1 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
