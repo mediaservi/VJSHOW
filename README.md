@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v11.1**
+**Versión actual: v11.3**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,17 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v11.1)
+## 🆕 Cambios de la versión actual (v11.3)
+
+- **Continuidad de marca**: la cabecera del menú de cada juego lleva el mismo rótulo que su carátula (misma letra, mismos colores, título y variante), en grande, en lugar del texto genérico.
+- **Borradores de los juegos nuevos** en `borradores/`: WONDERWALK (paseo hasta el castillo con la lista de objetos) y KRAZYGOLF (tres hoyos, modos KRAZY y CLÁSICO, narrador). Se juegan con el ratón o con el dedo; aún no usan el móvil como mando ni están en la consola.
+- `?juego=<variante>` abre directamente cualquier cartucho (zombieland, halloween, fortuna, basket…).
+- **Continuidad de la sala**: el fondo de la pantalla del cartucho es una foto de la propia sala tomada en ese momento, con la misma mesa y lo que hay encima (casete, mando, lata, teléfono, caja del juego), en lugar de una imagen aparte.
+- **La tapa de la caja** queda levantada al abrirla (antes se tumbaba y se metía en la consola y en la tele).
+- **Un cartucho, una variante**: al abrir un cartucho la pantalla ya no ofrece las demás variantes del juego, se abra como se abra.
+- ZOMBIELAND alterna su música nueva con la de siempre, una partida con cada una.
+
+### v11.1
 
 - **PUNTERÍA · ZOMBIELAND con recursos propios (piloto)**: los emojis dejan paso a personajes dibujados y animados (dos zombis, hombre lobo, esqueleto, murciélago, rata y un pastor alemán al que no hay que disparar); disparos, recarga, gruñidos y muertes grabados, con varias tomas al azar; y banda sonora propia que entra con su introducción, enlaza con el bucle y cierra con un final (o con el tema de récord). Todo en `packs/zombieland/` (2,2 MB), con sus autores en `CREDITOS.md`. Si un archivo falta, el juego usa lo de antes.
 - **Enlace directo**: `?juego=zombieland` carga ese cartucho al abrir.
@@ -193,7 +203,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v11.1 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v11.3 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
