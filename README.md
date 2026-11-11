@@ -34,6 +34,7 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 
 - **Botón «Instalar».** En la cabecera, junto al aviso de fallos, hay un botón nuevo para instalar VJSHOW en el dispositivo como una aplicación más: se abre en su propia ventana, con su icono, y funciona sin conexión con lo que ya se haya usado. Es el mismo botón en toda la familia AVHUB. Donde el navegador no ofrece la instalación directa, el botón explica cómo hacerlo a mano («Añadir a pantalla de inicio»).
 - **«Guardar todo para usarla sin internet»**, en esa misma ventana: guarda de una vez toda la app (es el «modo feria» de siempre, ahora más a mano). Y desde la primera visita se guarda ya todo lo que se ha cargado.
+- La ventana de instalar se maneja también con el teclado y con el mando de la tele (flechas, OK y atrás), sin que se muevan los controles de debajo.
 - La copia sin conexión es la de siempre (el «modo feria»): la app, las imágenes, los tipos y las librerías. Los vídeos en línea, los efectos de cámara y el enlace del mando siguen necesitando internet.
 - No cambia nada más del aspecto ni del funcionamiento.
 
