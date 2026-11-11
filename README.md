@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v9.2**
+**Versión actual: v9.3**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,11 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v9.2)
+## 🆕 Cambios de la versión actual (v9.3)
+
+- **Documentación legal completa:** `LEGAL.md`, `DISCLAIMER.md`, `PRIVACY.md` y `COOKIES.md` en el repositorio, enlazados desde el «Aviso legal» de la app. El aviso de la app añade que no es un proyecto técnico ni asesoramiento profesional, que la limitación de responsabilidad no alcanza a lo que la ley no permite excluir, y un apartado de privacidad y contacto.
+
+Sigue de la v9.2:
 
 - **Aviso legal.** Al final de la ventana de ayuda, y enlazado detrás de la línea de crédito, hay un aviso en lenguaje llano (es/en/ca): software gratuito hecho por afición, sin garantías y de uso bajo la responsabilidad de cada cual.
 
@@ -99,8 +103,10 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v9.2 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v9.3 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
 Software gratuito y de código abierto, hecho con pasión por un aficionado en su tiempo libre. No es un producto profesional. Se ofrece «tal cual», sin garantías de ningún tipo; los resultados son orientativos y hay que comprobarlos siempre; se usa bajo la responsabilidad de cada cual, hasta donde lo permita la ley aplicable. El aviso completo (es/en/ca) está en la propia app, en el enlace «Aviso legal» que acompaña a la línea de crédito. Licencia GPL-3.0.
+
+Documentos legales del repositorio: [`LEGAL.md`](LEGAL.md) (aviso legal), [`DISCLAIMER.md`](DISCLAIMER.md) (garantías y responsabilidad), [`PRIVACY.md`](PRIVACY.md) (privacidad), [`COOKIES.md`](COOKIES.md) (cookies y almacenamiento local) y [`LICENSE`](LICENSE) (GPL-3.0). Sin publicidad, afiliación ni ingresos de ningún tipo.
