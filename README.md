@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v10.3**
+**Versión actual: v10.4**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,13 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v10.3)
+## 🆕 Cambios de la versión actual (v10.4)
+
+- **Espadas, sables y bates más finos (PALOTERAPIA).** La hoja sigue al móvil con menos de la mitad de retraso y responde igual en una tele lenta que en un ordenador rápido. Ahora cuenta la velocidad de la hoja y no solo la del puño: un giro de muñeca también corta (antes no cortaba nada). El barrido entre una imagen y la siguiente ya no se salta objetos, y el margen de corte es algo más generoso. Quieto, sigue sin cortar.
+- **Sin latigazos al girar la muñeca.** Si el móvil se tumbaba más de 90°, la espada saltaba de golpe al lado contrario; ahora se queda tumbada de ese lado.
+- El resto de cambios de esta versión son de la sala de MSGAME (teléfono rojo en la mesa, brazo y moqueta en la secuencia del cartucho); en VJSHOW no cambia nada más.
+
+### Sigue de la v10.3
 
 - **Calibrar el mando, sin pulsar nada.** Se apunta el borde superior del móvil al centro de la pantalla; sale una cuenta atrás de 3 segundos y el mando se calibra solo en cuanto el móvil está quieto. Después, la bola verde sigue al móvil unos segundos para comprobar que ha quedado bien. Antes había que pulsar un botón, y al pulsarlo (y al mirar el móvil para encontrarlo) se movía justo lo que se estaba midiendo; además, durante el calibrado se veía una bola con el ajuste anterior, que despistaba.
 - **El calibrado sale solo** cada vez que un móvil se conecta, si no hay una partida en marcha. Durante el juego, ⊙ Centrar corrige el centro al momento.
@@ -158,7 +164,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v10.3 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v10.4 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
