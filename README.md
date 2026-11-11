@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v10.4**
+**Versión actual: v10.5**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,11 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v10.4)
+## 🆕 Cambios de la versión actual (v10.5)
+
+- Esta versión cambia las carátulas de los cartuchos de la sala de MSGAME (títulos, variantes y fondos nuevos). En VJSHOW no cambia nada a la vista.
+
+### Sigue de la v10.4
 
 - **Espadas, sables y bates más finos (PALOTERAPIA).** La hoja sigue al móvil con menos de la mitad de retraso y responde igual en una tele lenta que en un ordenador rápido. Ahora cuenta la velocidad de la hoja y no solo la del puño: un giro de muñeca también corta (antes no cortaba nada). El barrido entre una imagen y la siguiente ya no se salta objetos, y el margen de corte es algo más generoso. Quieto, sigue sin cortar.
 - **Sin latigazos al girar la muñeca.** Si el móvil se tumbaba más de 90°, la espada saltaba de golpe al lado contrario; ahora se queda tumbada de ese lado.
@@ -164,7 +168,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v10.4 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v10.5 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
