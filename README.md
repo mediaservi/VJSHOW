@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v11.5**
+**Versión actual: v11.6**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,14 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v11.5)
+## 🆕 Cambios de la versión actual (v11.6)
+
+- **Juego nuevo: SHATEKI · galería de tiro de Osaka**, con su cartucho y su carátula. Caseta de feria japonesa en 3D: gradas rojas llenas de premios (cajas con las marcas de mediaservi, dulces, latas, gatos de la suerte y los tres dorados del altarcillo), rótulos de caligrafía y bombillas.
+  - Se dispara con un **rifle de corchos visto por sus miras, sin cruceta**: el alza es una pletina con muesca y el punto de mira se ve dentro. El pulso tiembla un poco y, si el punto de mira se va a un lado de la muesca, el corcho se va hacia ese lado.
+  - **7 corchos por ronda. El premio solo cuenta si cae del estante**: las cajas pequeñas vuelcan con un corcho bien dado arriba; las grandes, las latas y los gatos hay que empujarlos a base de impactos hasta el borde. El corcho cae un poco por el camino.
+  - Se juega con el **móvil como rifle** (igual que PUNTERÍA), con el ratón, o con el dedo (un toque apunta y otro dispara). `?juego=shateki` lo abre directamente.
+
+### v11.5
 
 - **Dos cartuchos nuevos en la estantería, con su carátula**: **WONDERWALK** (el camino al castillo) y **KRAZYGOLF** (minigolf gamberro). Siguen en desarrollo: se abren a pantalla completa desde su cartucho y se juegan con el dedo o el ratón; aún no usan el móvil como mando. `?juego=wonderwalk` y `?juego=krazygolf` los abren directamente.
 - **WONDERWALK**: el camino ya no es recto, serpentea por prado, bosque y colinas con río y puente; los objetos de la lista están escondidos detrás de piedras, arbustos y troncos (hay que tocar el escondite para mirar), hay zarzas que cortan el paso y ladrones que te roban un objeto si no los espantas.
@@ -215,7 +222,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v11.5 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v11.6 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
