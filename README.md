@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v11.4**
+**Versión actual: v11.5**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,13 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v11.4)
+## 🆕 Cambios de la versión actual (v11.5)
+
+- **Dos cartuchos nuevos en la estantería, con su carátula**: **WONDERWALK** (el camino al castillo) y **KRAZYGOLF** (minigolf gamberro). Siguen en desarrollo: se abren a pantalla completa desde su cartucho y se juegan con el dedo o el ratón; aún no usan el móvil como mando. `?juego=wonderwalk` y `?juego=krazygolf` los abren directamente.
+- **WONDERWALK**: el camino ya no es recto, serpentea por prado, bosque y colinas con río y puente; los objetos de la lista están escondidos detrás de piedras, arbustos y troncos (hay que tocar el escondite para mirar), hay zarzas que cortan el paso y ladrones que te roban un objeto si no los espantas.
+- **KRAZYGOLF**: la línea de apuntado es gruesa, a rayas en movimiento y acaba en punta de flecha hacia donde saldrá la bola; el modo CLÁSICO se juega en un campo de minigolf en 3D con su jardín (pinos, setos, estanque, valla, farolas y molino).
+
+### v11.4
 
 - **La caja del juego, de pie y con dos manos**: una mano la sujeta y la otra abre la carátula como un libro y saca el cartucho. La caja queda de pie en la mesa, entreabierta y con la carátula a la vista, sin tocar el teléfono ni la consola.
 - **Logo nuevo a color** en la consola (sala y menú) y en la etiqueta del cartucho, donde antes iba grabado a una tinta y no se reconocía.
@@ -209,7 +215,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v11.4 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v11.5 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
