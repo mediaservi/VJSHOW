@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v11.3**
+**Versión actual: v11.4**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,13 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v11.3)
+## 🆕 Cambios de la versión actual (v11.4)
+
+- **La caja del juego, de pie y con dos manos**: una mano la sujeta y la otra abre la carátula como un libro y saca el cartucho. La caja queda de pie en la mesa, entreabierta y con la carátula a la vista, sin tocar el teléfono ni la consola.
+- **Logo nuevo a color** en la consola (sala y menú) y en la etiqueta del cartucho, donde antes iba grabado a una tinta y no se reconocía.
+- **ZOMBIELAND**: vuelve a sonar su música de siempre (la del paquete nuevo se ha quitado), los gruñidos suenan solo de vez en cuando y el fondo lleva bancos de humo verde y lila a la deriva.
+
+### v11.3
 
 - **Continuidad de marca**: la cabecera del menú de cada juego lleva el mismo rótulo que su carátula (misma letra, mismos colores, título y variante), en grande, en lugar del texto genérico.
 - **Borradores de los juegos nuevos** en `borradores/`: WONDERWALK (paseo hasta el castillo con la lista de objetos) y KRAZYGOLF (tres hoyos, modos KRAZY y CLÁSICO, narrador). Se juegan con el ratón o con el dedo; aún no usan el móvil como mando ni están en la consola.
@@ -203,7 +209,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v11.3 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v11.4 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
