@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v11.8**
+**Versión actual: v12.0**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,15 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v11.8)
+## 🆕 Cambios de la versión actual (v12.0)
+
+- **VJSHOW y MSGAME son ya dos apps independientes.** Cada una tiene su código fuente en su repositorio y su propia numeración; el `index.html` de MSGAME deja de generarse a partir de este.
+- **Los juegos viven solo en MSGAME.** De este repositorio salen las carpetas `juegos/`, `borradores/` y `packs/`, y la música de los juegos (`sonidos/ingame_*` y `menu_gamesystem`): la descarga pasa de unos 46 MB a unos 8,5 MB. Del código salen el videoclub en 3D (la home de MSGAME) y la página del móvil como mando.
+- Los enlaces de mando, de reto y de cartucho (`?pad=`, `?reto=`, `?juego=`) que lleguen a VJSHOW se abren en MSGAME, igual que el botón «mediaservi GAME SYSTEM» del rack.
+- En VJSHOW no cambia nada a la vista: los cuatro pasos, la sala inmersiva, las capas, el modo feria y la copia sin conexión siguen igual.
+- **Pendiente (segunda fase):** el motor de los juegos sigue dentro de `index.html`, sin uso, porque comparte con VJSHOW los sonidos de la interfaz y sus ajustes. Se retirará cuando ese módulo de sonido esté separado.
+
+### v11.8 (última versión con el código compartido con MSGAME)
 
 - **KRAZYGOLF · modo KRAZY en 3D**, a la altura del clásico: cada hoyo es un rincón de casa modelado entero. La encimera (mantel de cuadros, terrones de azúcar, tostadora con sus tostadas, harina derramada, taza, aceitera, frutero, salero), el despacho (vade, libros, teclado con teclas, ventilador de sobremesa que gira, monitor, flexo, lápices) y el salón (alfombra con flecos, piezas de construcción, puf, robot aspirador, sofá, lámpara y planta). Las pelotas absurdas también son 3D: huevo, cubito de hielo translúcido, albóndiga, saltarina que bota y pelota de playa.
 - **KRAZYGOLF · modo nuevo SIMULATOR**: simulador de golf como los de sala, visto desde detrás de la bola. Campo propio e inventado, **AVHUB Golf Links & Park**, de 9 hoyos con trazado de ida y vuelta: sale de la casa club por el parque (arbolado, lagos, un río con puente), llega a la costa (dunas, búnkeres de olla, hierba alta, viento, faro y mar) y vuelve a la casa club. Recorrido corto de 3 hoyos o completo de 9 (par 36).
@@ -249,7 +257,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v11.8 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v12.0 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
