@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v12.3**
+**Versión actual: v12.4**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,14 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v12.3)
+## 🆕 Cambios de la versión actual (v12.4)
+
+- **Móvil en vertical, sin nada a medias.** La pantalla de ajustes (SALIDA, CONTENIDO, EFECTOS y SHOW) ya no se queda en una rendija cuando en PRO se juntan la cabecera, las subpestañas y el mezclador de siete capas. Ahora tiene un alto mínimo cómodo, más o menos la mitad de la pantalla, y si con todo no cabe, el rack se recorre hacia abajo hasta el mezclador. Por ejemplo, en CONTENIDO → MEDIA se ve entera la fila «Nombre de la nueva lista · CREAR».
+- Mientras queda contenido por debajo, la pantalla de ajustes se difumina abajo: así se ve que sigue y no parece cortada.
+- El contador de pasos se lee entero («2/4 · Contenido»): en el móvil el paginador, que no se usa, ya no le quita sitio.
+- En móviles estrechos, BLACKOUT y FREEZE bajan a su propia fila y el fader de MASTER recupera su recorrido.
+
+### v12.3
 
 - **Línea de crédito nueva**, la misma que en SCREENS, SYSTEMS y ADPOSTER: «VJSHOW v12.3 2026 forma parte del proyecto AVHUB ideado por el fundador de mediaservi.com», en español, inglés y catalán. Si el navegador o el panel guardaban la frase anterior, se cambia sola por la nueva; la dirección «…/#aviso» abre el aviso legal.
 
@@ -269,7 +276,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v12.3 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v12.4 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
