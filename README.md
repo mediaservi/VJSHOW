@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v12.4**
+**Versión actual: v12.5**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,33 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v12.4)
+## 🆕 Cambios de la versión actual (v12.5)
+
+Repaso completo en el móvil en vertical (360, 390 y 412 px de ancho; español, inglés y catalán):
+
+- **Idioma:** el menú de idiomas cabe entero en la pantalla del móvil (antes se salía por la izquierda y en móviles pequeños no se podía elegir).
+- **Mezclador:** en el móvil, las capas van en dos columnas con su nombre entero (también «BACKGROUNDS» u «OBJECTES»), y el fader de MASTER tiene todo el ancho. Si un rótulo no cabe, la letra se reduce, sin cortarse.
+- **Botones más fáciles de tocar:** RESTABLECER, subpestañas, botones de capa, 🎛, ↺ y ▲ ▼ miden al menos unos 32 px en las pantallas táctiles.
+- **Letra legible:** «EN USO», los contadores de las listas, los rótulos de ORDEN y los nombres de las tipografías ya no bajan de 10 px.
+- **Flechas del pie:** se llaman «Paso anterior» y «Paso siguiente», y se apagan al principio y al final.
+- **SIMPLE y PRO:** también se cambia el modo tocando las palabras, no solo el interruptor.
+- **Estilo activo:** siempre marcado, también cuando lo cambia el modo automático.
+- **Lo oculto, oculto:** el botón AÑADIR de OBJETOS y la lista cerrada de tipografías ya no se ven cuando no tocan. Los apartados que se despliegan («Trayectoria (X/Y %)»…) llevan su flecha.
+- **Avisos que faltaban:**
+  - QR de DIRECTO sin conexión;
+  - la página del móvil que envía la cámara: ya no se queda en «Conectando…» y explica si no hay cámara o permiso;
+  - red (WebSocket) que no conecta;
+  - WHEP sin dirección;
+  - audio por URL que no carga (ya no pone «EN VIVO» si no suena nada).
+- **Mensajes para el móvil:** en las pantallas táctiles ya no se habla de teclas. Por ejemplo, «Toca el botón naranja para ir al directo» o «Toca la pantalla para volver al rack».
+- **Modo feria:** el botón dice «✓ Listo para usar sin internet» al acabar, porque la ventana de ayuda tapaba el visor.
+- **Traducciones:** las reglas de modulación («Aprender», «Velocidad»), «Sin cámara conectada» y el aviso de la ventana de salida ya salen en inglés y en catalán. Textos de ayuda de los campos más cortos, para que se lean enteros.
+- **Listas:** al renombrar se pregunta por el «nuevo nombre», y el nombre no pasa de 40 caracteres.
+- **Sin errores en la consola:**
+  - `media-manifest.json` ya lista las imágenes de `fondos/`, `gente/` y `objetos/`, así que no se prueban decenas de nombres que no existen. Al añadir imágenes hay que apuntarlas también ahí; se hace en cada REFRESH.
+  - VJSHOW ya no pide los sonidos de los juegos, que viven en MSGAME.
+
+### v12.4
 
 - **Móvil en vertical, sin nada a medias.** La pantalla de ajustes (SALIDA, CONTENIDO, EFECTOS y SHOW) ya no se queda en una rendija cuando en PRO se juntan la cabecera, las subpestañas y el mezclador de siete capas. Ahora tiene un alto mínimo cómodo, más o menos la mitad de la pantalla, y si con todo no cabe, el rack se recorre hacia abajo hasta el mezclador. Por ejemplo, en CONTENIDO → MEDIA se ve entera la fila «Nombre de la nueva lista · CREAR».
 - Mientras queda contenido por debajo, la pantalla de ajustes se difumina abajo: así se ve que sigue y no parece cortada.
@@ -276,7 +302,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v12.4 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v12.5 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
