@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v12.6**
+**Versión actual: v12.7**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -30,7 +30,17 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v12.6)
+## 🆕 Cambios de la versión actual (v12.7)
+
+- **Luces DMX (beta), fase 1** · pestaña nueva en **Show › Luces**: VJSHOW controla focos DMX desde el propio navegador, sin instalar nada.
+  - **Salida DMX por USB** con interfaces tipo DMX USB Pro y compatibles u Open DMX (Chrome o Edge en un ordenador; usa la Web Serial API). Un universo de 512 canales, unos 30 envíos por segundo. Al desconectar, las luces se apagan.
+  - **Patch guiado en tres pasos** (conecta la interfaz, añade tus aparatos, pruébalos), con ayuda paso a paso para quien empieza: tipos de foco genéricos (RGB, RGBW, con regulador, con estrobo, RGBWA + UV, regulador, estrobo, máquina de humo y canales sueltos), direcciones que se reparten solas y aviso si dos aparatos comparten canales.
+  - **Prueba de cada aparato**: color, regulador, canal a canal, IDENTIFICAR (parpadea), APAGÓN y TODO A TOPE para comprobar el cableado.
+  - **Importa de QLC+** (qlcplus.org, Apache 2.0): definiciones de aparatos (.qxf, con sus modos) y el patch del primer universo de un proyecto (.qxw).
+  - Interfaz en español, inglés y catalán; RESTABLECER en cada tarjeta. La salida se ha comprobado con una interfaz simulada: falta probarla con interfaces reales, por eso lleva la etiqueta BETA.
+  - Próximas fases: escenas y luces que siguen la música, movimientos y matrices, consola de botones, línea de tiempo, MIDI y OSC, Art-Net y sACN.
+
+### v12.6
 - **Sin caché** (pedido por Josep, 18-11-2026): las páginas llevan las etiquetas equivalentes a `Cache-Control: no-cache, no-store, must-revalidate` y el service worker pide siempre al servidor lo de la propia app, revalidando, sin pasar por la copia del navegador. Sin conexión sigue funcionando con la copia guardada.
 
 ### v12.5
@@ -305,7 +315,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v12.6 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v12.7 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
