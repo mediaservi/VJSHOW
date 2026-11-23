@@ -11,6 +11,11 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
+
+## Icono
+
+Icono de pestaña y de app (noviembre 2026) en el estilo de placa de la familia AVHUB: placa con degradado negro a morado, filete negro y sombra verde, con el isotipo de la app. El logo de la cabecera no cambia.
+
 ## 🚀 Características Clave
 
 - **Audio-Reactividad en Tiempo Real:** Analiza el audio de tu micrófono o sistema y genera visuales sincronizados sin latencia perceptible.
