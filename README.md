@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v12.7**
+**Versión actual: v12.8**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -35,7 +35,75 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v12.7)
+## 🆕 Cambios de la versión actual (v12.8)
+
+Pensada para todos los niveles: quien monta una fiesta en casa debe poder usarla sin aprender nada, y un VJ profesional debe tener a mano el tempo, las escenas y el MIDI. No se ha quitado ninguna función de la v12.7.
+
+**Arreglos**
+- **Efectos de cámara** (Contenido › Directo): «ASCII y espejo geométrico», «Esqueleto de partículas neón (manos)» y «Pincel de mirada (rostro)» ya se dibujan en la salida. Antes se elegían pero no se veían.
+- **Grabación**: graba lo mismo que ve el público: el vídeo local de Media, el color global, el logo, la viñeta, el MASTER y el BLACKOUT. Con la salida avanzada graba la salida completa. Los vídeos en línea de Media no se pueden grabar (el navegador no lo permite) y la app avisa.
+- **Color global con la salida avanzada**: también llega a las SCREEN abiertas en otras ventanas.
+- **TAP tempo exacto**: cuenta la hora real de cada toque (ratón, dedo, tecla T o nota MIDI), usa hasta 8 toques y se reinicia tras 2 s sin tocar. Tocar a 128 BPM da 128. El primer toque marca el «1» del compás.
+- **Un solo AUTO**: el antiguo MODO AUTO y el AUTOBOT ya no funcionan a la vez (ver AUTO de 3 niveles).
+- **Textos enteros**: las ayudas largas ya no se cortan con «…», los rótulos nunca parten una palabra y los desplegables muestran su opción entera.
+
+**Salidas y pantallas**
+- **Duplicar de serie**: con 2 o más pantallas en «Mezcla», cada una recibe la imagen entera (en SIMPLE siempre; en PRO es el comportamiento de serie y se puede elegir Lienzo único, Clonado parcial o Individual). El lienzo sigue al nº de pantallas y al comportamiento.
+- **Ajuste por pantalla**: en Salida › Mapeo la máscara, el recorte y la corrección se aplican solo a la pantalla elegida («Ajuste individual» de serie), con un aviso de a qué se aplica. Una máscara de imagen sin imagen ya no deja una pantalla en negro.
+- **Pantallas en «Capas»**: ofrecen también **Media** y **Logo**, y obedecen **BLACKOUT** y **MASTER** como las demás.
+- **Todo vuelve tras una recarga o un corte**: la salida avanzada (warping, máscara PNG, edge blending, corrección), los vídeos de «Mis vídeos» (se guardan en el equipo) y las ventanas SCREEN que siguen abiertas, que se vuelven a enganchar solas.
+- **SIMPLE**: tocar una SCREEN del mapa abre su ventana a la primera.
+
+**Tempo y audio**
+- **TEMPO siempre a mano** (panel AUDIO; en el móvil, en Show › Control): TAP, 4 testigos de compás y, en PRO, «1» (resync), nudge − / +, ×2 y ÷2.
+- **Reloj MIDI de verdad**: BPM con decimales, fase bloqueada a los ticks (24 por pulso), START pone el «1», STOP y CONTINUE, y un hueco del reloj no inventa un BPM. Con reloj manda el reloj: el BPM del audio y el TAP no le pelean la fase.
+- **AUTO, drops y cue list anclados al compás**: las frases del AUTO caen cada 16 pulsos (8 en LOCO), el drop fija el «1» y la cue list en compases ya no deriva; su GO entra en el siguiente compás.
+- **Drops**: el detector separa el BREAK del BUILD-UP, compara con el nivel del groove (sin el autonivel) y espera a que vuelvan los graves con continuidad, así que un riser o un redoble ya no disparan un drop falso. Botón **DROP** (PRO, Modo de SHOW), tecla D y destino MIDI para dispararlo a mano.
+- **Entrada y reactividad** (Efectos › Audio): entrada elegible, testigo de señal, autonivel y Reactividad. Un silencio entre canciones se muestra como «Esperando música…», sin alarma; «sin señal» solo si no ha sonado nada en un rato.
+- Si el micrófono estaba encendido y el permiso ya está concedido, vuelve solo al abrir la app.
+- Las **bandas de audio** (graves, medios, agudos, energia, golpe) sirven como origen en las Reglas de modulación, y los **LFO** pueden ir en pulsos. Destinos nuevos: tono del color, glitch, Reactividad y opacidad del logo.
+
+**Automático, capas y escenas**
+- **AUTO de 3 niveles**: SUAVE, ANIMADO y LOCO. **No viene encendido** al abrir por primera vez. Lanzar una escena lo pone en pausa (lo dice el rótulo).
+- **Candado por capa** (🔒 en cada tira del mezclador). Un **texto propio** queda encendido y con candado al escribirlo: ni el AUTO ni los modos lo apagan.
+- **Capa LOGO** (Contenido › Logo, tecla F8): PNG o SVG, siempre delante, 9 posiciones, tamaño, opacidad, margen y latido. Si cae sobre la franja del texto, se aparta para no taparlo.
+- **8 pads de escena** con nombre (también en SIMPLE) y miniatura. Toca para lanzar; mantén pulsado para guardar (se confirma con un destello). Con un nombre escrito, Intro renombra la escena activa. En PRO: **ENTRAR EN**, **transición** y **duración en pulsos**.
+- **Las escenas guardan también el texto y el clip de Media** que sonaba, y eligen qué más guardan (audio y salida solo si se marcan).
+- **Cue list**: nombres de escena, orden (▲), duración en segundos o compases, fundido cruzado sin pasar por negro y opción de avanzar en cada drop (al corte).
+- **Deshacer y Rehacer** (↶ o Ctrl+Z; Ctrl+Y o Ctrl+Mayús+Z): cada cambio a mano también es un paso, así que deshacer no se come los ajustes manuales.
+- **Secuencia de 16 pasos** (PRO, Show › Control).
+- **Mis vídeos**: el clip que suena queda marcado y se puede **repetir el vídeo** en bucle.
+
+**MIDI**
+- **MIDI LEARN** (PRO, Show › Entradas; en SIMPLE, Show › Sala › Controlador MIDI): faders, ON de capa, MASTER, BLACKOUT, FREEZE, pads, TAP, «1», GO, niveles del AUTO y ahora también modos, SORPRÉNDEME, REC, DROP, nudge, ×2 ÷2, Deshacer, Tono del color, Entrar en, Transición y Duración.
+- Lo aprendido guarda el **canal**; las notas disparan con **cualquier velocidad** y BLACKOUT o FREEZE se encienden y apagan con la misma nota. Los faders tienen **recogida suave** (no saltan hasta cruzar el valor de la app).
+- **Sin reglas de fábrica**: las Reglas de modulación vienen vacías y las notas 36-41 ya no tocan capas si no se asignan.
+- **LED de vuelta** para todo lo asignado a notas (escenas, capas, BLACKOUT, FREEZE, AUTO, REC), en su canal. Aviso al conectar y al desconectar el controlador, con su nombre.
+- El rack **no se oculta** mientras se usa el controlador, durante MIDI LEARN o grabando, y al volver sigue en la pestaña donde estaba. La placa de MIDI LEARN va abajo para no tapar la cabecera.
+
+**Fiesta, operador e instalación**
+- **Asistente FIESTA** (★ FIESTA; en el móvil la app abre en Show › Control, con el asistente a la vista): ① de dónde suena la música, con palabras de casa y la opción elegida marcada; ② **foto o logo** con tamaño Pequeña · Mediana · Grande y el texto en pantalla; ③ SUAVE · ANIMADO · LOCO (ANIMADO de serie), «sin vídeos de internet» (pueden traer anuncios: el AUTO no los enciende en la fiesta) y bloquear con PIN. **EMPEZAR SHOW** pone la pantalla completa de verdad y explica cómo volver al menú.
+- **■ TERMINAR FIESTA** (columna del flujo y Show › Control): apaga el AUTO y el micro y deja la pantalla en negro con un fundido.
+- **Un solo «FIESTA»**: el nivel del medio del AUTO se llama ANIMADO.
+- **Modo OPERADOR e INSTALACIÓN**: el **PIN es obligatorio** al entrar a mano (se crea en el momento), se guarda cifrado y **no viaja** en el archivo de show; 5 intentos fallidos imponen una espera creciente. Sin PIN, Esc ya no saca del modo: hay que mantener 3 s la esquina. El modo **sobrevive a una recarga**. La barra del operador se recoge sola a los 6 s y deja la imagen libre; un punto discreto indica el estado del audio.
+- **Luces DMX**: siguen al BLACKOUT y al MASTER de la imagen.
+- **Máscara desde imagen** (PRO, Salida › Mapeo), con invertir y difuminado.
+- **Show › Sala**: operador e instalación, grabación y menú, rendimiento, archivo de show, mis archivos y controlador MIDI (SIMPLE).
+
+**Interfaz**: todo lo nuevo en español, inglés y catalán, con RESTABLECER donde hay ajustes, estados ON/OFF inequívocos y la estética del rack. Sin scroll en escritorio ni TV y sin textos ni desplegables cortados (comprobado a 1920×1080, 1536×856, 1280×800, 960×540, 390×844 y 844×390, en SIMPLE y PRO).
+
+**Siguiente fase** (no incluido en esta versión)
+- Varias superficies por salida y editor de esquinas sobre la propia imagen; resolución propia por salida y malla de más puntos.
+- Platinas A/B en Media con crossfader, una segunda capa de vídeo propio y rejilla de clips en bancos con disparo por nota MIDI; clips con entrada y salida y lanzamiento a compás.
+- Luces que siguen el vídeo (pixel mapping) y escenas de luces dentro de las escenas.
+- **Plantilla Boda** en el asistente (nombres y fecha, fotos, escenas ENTRADA · BAILE · FIESTA y operador) y **pase de fotos** a pantalla completa para entradas y discursos.
+- Operador «camarero» con menos teclas y panel de sala en el móvil por QR; programación por horario.
+- Mando de emergencia en el móvil horizontal (BLACKOUT y 8 pads sin desplazar) y cabecera de SIMPLE con palabras.
+- Grabación con resolución propia (1080p o vertical) y contador.
+- Sincronía de tempo por red, plantillas de controlador y exportar el mapa MIDI.
+- Cámara como sensor, feedback de imagen y paletas reactivas; efectos de manos y rostro sin conexión.
+
+### v12.7
 
 - **Luces DMX (beta), fase 1** · pestaña nueva en **Show › Luces**: VJSHOW controla focos DMX desde el propio navegador, sin instalar nada.
   - **Salida DMX por USB** con interfaces tipo DMX USB Pro y compatibles u Open DMX (Chrome o Edge en un ordenador; usa la Web Serial API). Un universo de 512 canales, unos 30 envíos por segundo. Al desconectar, las luces se apagan.
@@ -320,7 +388,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v12.7 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v12.8 2026 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 
