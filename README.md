@@ -7,7 +7,7 @@ Visualiza la música y déjate envolver por un espectáculo de capas reactivas e
 🔗 **Pruébala en vivo ahora mismo:**
 - **[vjshow.mediaservi.com](https://vjshow.mediaservi.com)**
 
-**Versión actual: v12.8**
+**Versión actual: v12.9**
 
 🎮 **¿Buscas los juegos?** Ahora tienen su propia web: **[MSGAME · msgame.mediaservi.com](https://msgame.mediaservi.com)**.
 
@@ -35,7 +35,11 @@ VJSHOW utiliza la Web Audio API y renderizado Canvas/WebGL para procesar las fre
 3. Selecciona tus estilos, capas y efectos.
 4. Ajusta los controles reactivos y ¡disfruta del espectáculo a pantalla completa!
 
-## 🆕 Cambios de la versión actual (v12.8)
+## 🆕 Cambios de la versión actual (v12.9)
+- **Accesos directos** al final de la ventana de ayuda e información: la dirección de VJSHOW (`vjshow.mediaservi.com`) con su nombre (se abre al tocarlo), la dirección escrita entera y un botón **Copiar**. En español, inglés y catalán.
+- Caché nueva del modo feria (`vjshow-feria-v12.9`).
+
+## Cambios de la v12.8
 
 Pensada para todos los niveles: quien monta una fiesta en casa debe poder usarla sin aprender nada, y un VJ profesional debe tener a mano el tempo, las escenas y el MIDI. No se ha quitado ninguna función de la v12.7.
 
@@ -388,7 +392,7 @@ Este proyecto es de código abierto y se distribuye bajo la licencia **GNU GPL v
 Esto significa que eres libre de usar, modificar y distribuir VJSHOW (incluso en eventos comerciales), siempre y cuando cualquier versión modificada que distribuyas mantenga el código abierto bajo esta misma licencia.
 
 ---
-*VJSHOW v12.8 2026 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
+*VJSHOW v12.9 2026 es un proyecto hecho con ⚙ by [mediaservi.com](https://mediaservi.com)*
 
 ## Aviso
 

@@ -330,6 +330,12 @@ html:not([data-app=msgame]) #dashTab5{display:none!important}
     .card .sl,.card .fld,.card .tog,.card .row,.card .orow,.card .grid-2>*,.card .grid-auto>*,.card>p,.card canvas,.card .krow{break-inside:avoid;-webkit-column-break-inside:avoid}
 
     /* v2.7 */
+    /* v12.9 · NORMA (27-11): ACCESOS DIRECTOS al final de la información */
+    .hacc{display:grid;gap:.4rem;border-top:1px solid rgba(0,0,0,.35);padding-top:.6rem}.hacc h3{margin:0;font:800 .72rem/1.2 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--g)}
+    .hacc .af{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;align-items:center;gap:.6rem;background:rgba(0,0,0,.28);border:1px solid var(--g);border-radius:.45rem;padding:.35rem .35rem .35rem .65rem}
+    .hacc .af a{color:#f1f5f9;font-weight:700;text-decoration:none;min-width:0;overflow-wrap:anywhere}.hacc .af a:hover,.hacc .af a:focus-visible{text-decoration:underline}
+    .hacc .af code{font:.82rem/1.25 'Share Tech Mono',monospace;color:#c5ccd4;min-width:0;overflow-wrap:anywhere}
+    @media (max-width:600px){.hacc .af{grid-template-columns:minmax(0,1fr) auto}.hacc .af code{grid-column:1;grid-row:2}.hacc .af .btn{grid-column:2;grid-row:1/span 2}}
     .helpcred{margin-top:.4rem;padding-top:.6rem;border-top:1px solid rgba(0,0,0,.35);text-align:center;font-size:.8rem!important}
     .helpcred .credits{flex:none;font-size:inherit;color:#e3e8ec}.helpcred a{color:var(--g);text-decoration:none!important}
     #ledMsg .hg{font-family:'Noto Sans Warang Citi','Segoe UI Historic','Noto Sans Symbols 2',sans-serif;text-transform:none}
@@ -1780,6 +1786,7 @@ html:not([data-app=msgame]) #dashTab5{display:none!important}
       <div class="row"><button id="btnFair" class="btn pri tv-focusable"><span>📶 Preparar modo feria (sin internet)</span></button></div><p class="hint vj-only">Ábrela desde su web con conexión, pulsa este botón y espera al aviso «Listo». Después la misma dirección funciona sin internet en este equipo: app, fondos, fuentes e imágenes. Los vídeos en línea no se guardan.</p><p class="hint msg-only" id="fairInfo">Ábrela desde su web con conexión, pulsa este botón y espera al aviso «Listo». Después la misma dirección funciona sin internet en este equipo: app, juegos, fondos, fuentes e imágenes. Los vídeos en línea no se guardan y el mando del móvil necesita un poco de datos (vale el punto de acceso del móvil).</p><div class="row"><button id="btnDownload2" class="btn tv-focusable"><i data-lucide="download" class="w-4 h-4"></i><span>Descargar app offline</span></button></div><p class="hint">La copia offline incluye la app, las imágenes por defecto y los enlaces, y permite conectar carpetas de tu equipo.</p><div id="helpKeys"></div>
       <div class="row"><button id="btnKeysReset" class="btn tv-focusable">Restablecer teclas por defecto</button></div>
       <div id="helpAviso" class="hint" data-noi18n></div>
+      <div id="helpAcc" class="hacc" data-noi18n></div>
       <p class="hint helpcred"><span id="credits" class="credits"></span></p>
     </div>
   </div>
@@ -3708,7 +3715,7 @@ html:not([data-app=msgame]) #dashTab5{display:none!important}
       if (pipOn) { isPipMinimized = false; document.getElementById('pipCanvasBox').style.display = 'block'; }
     }
 
-    const APP_VERSION = '12.8';
+    const APP_VERSION = '12.9';
     const APP_HOME = ES_MSG ? URL_MSGAME : URL_VJSHOW;
     function initCredits() { try { document.getElementById('plateVer').textContent = APP_VERSION; } catch (e) {}
       pintaCreditos(); if (window.AVCREDITO) window.AVCREDITO.alCambiar(pintaCreditos);
@@ -3731,7 +3738,12 @@ html:not([data-app=msgame]) #dashTab5{display:none!important}
       if ($('loopSource').value === 'local') { lvNext(); return; }
       try { const t = ytPlayer, n = (t.getPlaylist() || []).length; if (n < 2) return; let i; do { i = Math.floor(Math.random() * n); } while (i === ytSt.last); ytSt.last = i; ytSt.t = Date.now(); t.playVideoAt(i); showToast('Salto aleatorio a otro vídeo'); } catch (e) {}
     }
-    function openHelp() { renderHelp(); modal.classList.remove('hidden'); setTimeout(() => $('btnHelpClose').focus(), 30); }
+    /* v12.9 · NORMA (Josep, 27-11): al final de la información, los ACCESOS DIRECTOS con COPIAR */
+    function renderAcc() { const box = $('helpAcc'); if (!box) return; const k = ({ en: 1, ca: 2 })[(document.documentElement.lang || 'es').slice(0, 2)] || 0, u = 'https://vjshow.mediaservi.com/';
+      box.innerHTML = `<h3>${['Accesos directos', 'Direct links', 'Accessos directes'][k]}</h3><div class="af"><a href="${u}" target="_blank" rel="noopener" class="tv-focusable">${['VJSHOW · visuales al ritmo de la música', 'VJSHOW · visuals to the beat', 'VJSHOW · visuals al ritme de la música'][k]}</a><code>vjshow.mediaservi.com/</code><button type="button" class="btn tv-focusable" data-acc="${u}">${['Copiar', 'Copy', 'Copia'][k]}</button></div>`;
+      box.querySelectorAll('[data-acc]').forEach(b => b.addEventListener('click', () => { const v = b.dataset.acc, t0 = b.textContent, ok = () => { b.textContent = ['Copiada', 'Copied', 'Copiada'][k]; setTimeout(() => { b.textContent = t0; }, 1500); };
+        (navigator.clipboard ? navigator.clipboard.writeText(v) : Promise.reject()).then(ok, () => { const r = document.createElement('textarea'); r.value = v; document.body.appendChild(r); r.select(); try { document.execCommand('copy'); ok(); } catch (e) {} r.remove(); }); })); }
+    function openHelp() { renderHelp(); renderAcc(); modal.classList.remove('hidden'); setTimeout(() => $('btnHelpClose').focus(), 30); }
     $('btnAudioTab').addEventListener('click', captureTab);
     ['btnHelp'].forEach(id => $(id).addEventListener('click', openHelp));
     $('btnHelpClose').addEventListener('click', () => { capturing = null; modal.classList.add('hidden'); });

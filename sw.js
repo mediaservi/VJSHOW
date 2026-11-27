@@ -1,5 +1,5 @@
 /* VJSHOW · service worker del «modo feria»: guarda la app, las imágenes, las fuentes y las librerías para usarla sin internet */
-const CACHE = 'vjshow-feria-v12.8';   // v12.8
+const CACHE = 'vjshow-feria-v12.9';   // v12.9
 const CDN = /(^|\.)(fonts\.googleapis\.com|fonts\.gstatic\.com|unpkg\.com|cdnjs\.cloudflare\.com)$/;
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
